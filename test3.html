@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Titia">
+    <title>Mon site web</title>
+    
+    <!-- Styles CSS intégrés dans l'en-tête -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #87CEEB; /* Couleur de fond bleu ciel */
+        }
+
+        /* Style pour l'en-tête */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Style pour la section principale */
+        section {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        /* Style pour le pied de page */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Bouton */
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- En-tête de la page -->
+    <header>
+        <h1>Bienvenue sur mon site web</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section de contenu principal -->
+    <section>
+        <h2>Section Principale</h2>
+        <p>Ceci est la première section de mon site internet. Vous pouvez ajouter du contenu ici.</p>
+        <button id="clickBtn">Cliquez-moi</button>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Mon site web. Tous droits réservés.</p>
+    </footer>
+
+    <!-- JavaScript intégré -->
+    <script>
+        // Script pour gérer l'événement de clic sur le bouton
+        document.getElementById('clickBtn').addEventListener('click', function() {
+            alert('Bouton cliqué !');
+        });
+    </script>
+</body>
+</html>
